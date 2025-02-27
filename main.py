@@ -10,15 +10,27 @@ import numpy as np
 import matplotlib.pyplot as plt
 import gaussian_fitting as ewald
 
-X = np.linspace(-10, 10, 1000)
-A_true = 5       # Amplitude
-mu_true = 2      # Mean
-sigma_true = 2   # Standard deviation
+sample1 = 'samples/Sample1.txt'
+sample2 = 'samples/Sample1.txt'
 
-Y = A_true * np.exp(-((X - mu_true) ** 2) / (2 * sigma_true ** 2))
-noise = np.random.normal(0, 0.2, X.shape)
-Y = Y + noise
 
+data = np.loadtxt(sample1)
+
+# Extract The data
+theta = data[:, 0]/2  # First column
+intensity = data[:, 1]  # Second column
+
+
+plt.figure(figsize=(10, 6))  # Optional: set figure size
+plt.plot(theta, intensity, label='Intensity vs Theta')
+
+plt.yscale('log')  # Set the y-axis to logarithmic scale
+plt.xlabel('Theta')  # Label for x-axis
+plt.ylabel('Intensity (log scale)')  # Label for y-axis
+plt.title('Intensity vs Theta in Log Scale')  # Title of the plot
+plt.grid(True)  # Show grid
+plt.legend()  # Show legend
+plt.show()  # Display the plot
 
 
 def gaussian(x, y, region_start, region_stop):
@@ -71,5 +83,4 @@ def gaussian(x, y, region_start, region_stop):
     
     
     
-gaussian(X, Y, region_start=-2, region_stop=7)
     
