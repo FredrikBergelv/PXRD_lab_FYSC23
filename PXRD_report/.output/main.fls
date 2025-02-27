@@ -394,7 +394,6 @@ INPUT ./Textfiles/3.Result.tex
 INPUT ./Textfiles/3.Result.tex
 INPUT Textfiles/3.Result.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
-INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./Figures/gaussian_sample1.pdf
 INPUT ./Figures/gaussian_sample1.pdf
 INPUT ./Figures/gaussian_sample1.pdf
@@ -406,6 +405,7 @@ INPUT ./Figures/gaussian_sample2.pdf
 INPUT ./Figures/gaussian_sample2.pdf
 INPUT ./Figures/gaussian_sample2.pdf
 INPUT ./Figures/gaussian_sample2.pdf
+INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./Textfiles/4.Discussion.tex
 INPUT ./Textfiles/4.Discussion.tex
 INPUT Textfiles/4.Discussion.tex
