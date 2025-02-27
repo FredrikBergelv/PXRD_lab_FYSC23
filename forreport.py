@@ -71,19 +71,27 @@ for name in names:
             fit_y = gaussian(x_data, *popt)
             plt.plot(x_data, fit_y, label=f'Gaussian Fit {i + 1}')
             
-            # Add arrow and label for the peak
-            plt.annotate(f'Peak {i + 1}', 
-                         xy=(fit_mean, fit_amplitude), 
-                         xytext=(fit_mean + 0.01, fit_amplitude + 1.2), 
-                         arrowprops=dict(facecolor='black', arrowstyle='->'))
+            if name == 'sample2':
+                # Add arrow and label for the peak
+                plt.annotate(f'Peak {i + 1}', 
+                             xy=(fit_mean, fit_amplitude), 
+                             xytext=(fit_mean + 0.01, fit_amplitude + 1.2), 
+                             arrowprops=dict(facecolor='black', arrowstyle='->'))
+                
+            if name == 'sample1':
+                # Add arrow and label for the peak
+                plt.annotate(f'Peak {i + 1}', 
+                             xy=(fit_mean, fit_amplitude), 
+                             xytext=(fit_mean + 0.01, fit_amplitude + 12), 
+                             arrowprops=dict(facecolor='black', arrowstyle='->'))
     
             sf = 4  # significant figures
             
-            # Print the fitting parameters in LaTeX format
-            print(f'\\item Peak {i + 1}: Amplitude = {fit_amplitude:.2f} $\pm$ {np.sqrt(pcov[0, 0]):.2f} (units), '
-                  f'Mean = {fit_mean:.5f} $\pm$ {np.sqrt(pcov[1, 1]):.5f} (radians), '
-                  f'Sigma = {fit_sigma:.5f} $\pm$ {np.sqrt(pcov[2, 2]):.5f} (radians), '
-                  f'FWHM = {fwhm:.5f} $\pm$ {fwhm_uncertainty:.5f} (radians)')
+            # Print the fitting parameters in LaTeX format using \SI{}
+            print(f'\\item Peak {i + 1}: Amplitude = \\SI{{{fit_amplitude:.2f}}}{{units}} $\\pm$ \\SI{{{np.sqrt(pcov[0, 0]):.2f}}}{{units}}, '
+                  f'Mean = \\SI{{{fit_mean:.5f}}}{{radians}} $\\pm$ \\SI{{{np.sqrt(pcov[1, 1]):.5f}}}{{radians}}, '
+                  f'Sigma = \\SI{{{fit_sigma:.5f}}}{{radians}} $\\pm$ \\SI{{{np.sqrt(pcov[2, 2]):.5f}}}{{radians}}, '
+                  f'FWHM = \\SI{{{fwhm:.5f}}}{{radians}} $\\pm$ \\SI{{{fwhm_uncertainty:.5f}}}{{radians}}')
     
         except RuntimeError:
             print(f"  Peak {i + 1}: Could not fit peak in range {start:.4f} - {stop:.4f}")
