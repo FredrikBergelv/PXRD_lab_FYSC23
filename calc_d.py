@@ -41,24 +41,23 @@ def bragg(n, lamb, theta):
     d = n * lamb / (2 * sin(theta))  # Use sin from uncertainties.umath
     return d
 
-n = 3  # Order of reflection
+n = 1  # Order of reflection
 
 #%%
 # Calculate d for Sample 1
 print('Sample 1:')
-for theta in sample1:
+for i, theta in enumerate(sample1):
     d = bragg(n, lamb_xray, theta)  # Calculate d-spacing
     dish = (d * 1e10)  # Convert from meters to angstroms
-    print(f'd = {dish} Å')  # Print result
+    print(f'Peak {i+1}: d = {dish} Å')  # Print result
 
 
 #%%
 # Calculate d for Sample 1
 print('Sample 2:')
-for theta in sample2:
+for i, theta in enumerate(sample2):
     d = bragg(n, lamb_xray, theta)  # Calculate d-spacing
     dish = (d * 1e10)  # Convert from meters to angstroms
-    print(f'd = {dish} Å')  # Print result
-
+    print(f'Peak {i+1}: d = {dish} Å')  # Print result
 
 

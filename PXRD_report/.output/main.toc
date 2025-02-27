@@ -3,7 +3,8 @@
 \contentsline {subsection}{\numberline {2.1}Crystal Lattice Structure}{1}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Diffraction}{1}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Powder X-ray Diffraction}{1}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Method}{1}{section.3}%
-\contentsline {section}{\numberline {4}Result}{2}{section.4}%
-\contentsline {section}{\numberline {5}Discussion}{4}{section.5}%
-\contentsline {section}{\numberline {6}Conclusion}{4}{section.6}%
+\contentsline {section}{\numberline {3}Method}{2}{section.3}%
+\contentsline {section}{\numberline {4}Questions}{2}{section.4}%
+\contentsline {section}{\numberline {5}Result}{3}{section.5}%
+\contentsline {section}{\numberline {6}Discussion}{4}{section.6}%
+\contentsline {section}{\numberline {7}Conclusion}{4}{section.7}%
