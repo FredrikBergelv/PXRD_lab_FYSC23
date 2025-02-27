@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.25)  27 FEB 2025 12:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.25)  27 FEB 2025 13:18
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -867,7 +867,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.14 H
-      ot pixel, high peak with no width. The pixel can be burnt out. [1]) (./Textfiles/3.Result.tex) (./Textfiles/4.Discussion.tex) (./Textfiles/5.Conclusion.tex) [2] (.output/main.bbl) [3]
+      ot pixel, high peak with no width. The pixel can be burnt out. [1]) (./Textfiles/3.Result.tex
+<Figures/gaussian_sample1.pdf, id=84, 650.43pt x 433.62pt>
+File: Figures/gaussian_sample1.pdf Graphic file (type pdf)
+<use Figures/gaussian_sample1.pdf>
+Package pdftex.def Info: Figures/gaussian_sample1.pdf  used on input line 6.
+(pdftex.def)             Requested size: 450.69417pt x 300.46849pt.
+<Figures/gaussian_sample2.pdf, id=85, 650.43pt x 433.62pt>
+File: Figures/gaussian_sample2.pdf Graphic file (type pdf)
+<use Figures/gaussian_sample2.pdf>
+Package pdftex.def Info: Figures/gaussian_sample2.pdf  used on input line 11.
+(pdftex.def)             Requested size: 450.69417pt x 300.46849pt.
+ [2] [3 <./Figures/gaussian_sample1.pdf> <./Figures/gaussian_sample2.pdf>]) (./Textfiles/4.Discussion.tex) (./Textfiles/5.Conclusion.tex) [4] (.output/main.bbl) [5]
 \openout2 = `Textfiles/appendix.aux'.
 
  (./Textfiles/Appendix.tex) 
@@ -881,18 +892,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 3347476C58F0064D5C9F6A2AB4C3A2FA;991.
  ) 
 Here is how much of TeX's memory you used:
- 31833 strings out of 474222
- 626117 string characters out of 5748732
- 1929975 words of memory out of 5000000
- 53536 multiletter control sequences out of 15000+600000
- 570409 words of font info for 59 fonts, out of 8000000 for 9000
+ 31895 strings out of 474222
+ 627390 string characters out of 5748732
+ 1931975 words of memory out of 5000000
+ 53584 multiletter control sequences out of 15000+600000
+ 571174 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,13n,96p,2448b,948s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on .output/main.pdf (5 pages, 384827 bytes).
+ 99i,13n,96p,2448b,1045s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on .output/main.pdf (7 pages, 448893 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 500000)
- 90 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 100 words of extra memory for PDF output out of 10000 (max. 10000000)
 
