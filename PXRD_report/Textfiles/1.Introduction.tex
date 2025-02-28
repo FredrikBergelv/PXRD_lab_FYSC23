@@ -26,7 +26,19 @@ where $n$ is an integer, $\lambda$ is the wavelength of the incoming photon, $d$
 For example if we have a (111) plane with an  incident angle \( \theta = 11.2^\circ \) when X-rays of wavelength of \( 0.154 \, \text{nm} \) then the side of the side of each unit cell can be calculated as follows: From \autoref{eq:Bragg} we obtain a the distance planer separation to $d=\SI{0.397}{\nano\m}$, from \autoref{eq:seperation} we obtain that a separation of $d=\SI{0.397}{\nano\m}$ leads to a lattice constant of $a=\SI{6.36}{\angstrom}$ for a simple cubic. 
 
 Another example for a orthorhombic unit cell with dimensions $a=\SI{5.74}{\angstrom}$, $b=\SI{7.96}{\angstrom}$ and $c=\SI{4.95}{\angstrom}$ one can calculate the incident angles for the (100), (010), and
-(111) planes if the  wavelength is \SI{0.083}{\nano\m}. For the (100) plane \autoref{eq:seperation} gives a planar separation of $d_{(100)}=\SI{0.574}{\nano\m}$, (010) gives $d_{(111)}=\SI{0.796}{\nano\m}$ and (111) gives $d_{(111)}=\SI{0.339}{\nano\m}$. Using \autoref{eq:Bragg} the following angles are found: $\theta_{(100)} = \SI{4.15}{\degree}$, $\theta_{(010)} = \SI{2.99}{\degree}$ and $\theta_{(111)} = \SI{7.03}{\degree}$.
+(111) planes if the  wavelength is \SI{0.083}{\nano\m}. For the (100) plane \autoref{eq:seperation} gives a planar separation of $d_{(100)}=\SI{0.574}{\nano\m}$, (010) gives $d_{(010)}=\SI{0.796}{\nano\m}$ and (111) gives $d_{(111)}=\SI{0.339}{\nano\m}$. Using \autoref{eq:Bragg} the following angles are found: $\theta_{(100)} = \SI{4.15}{\degree}$, $\theta_{(010)} = \SI{2.99}{\degree}$ and $\theta_{(111)} = \SI{7.03}{\degree}$.
+
+\subsection{Structure Factors}
+Due to the structure of different types of lattices, the diffraction pattern may change. This is due to structure function which are defined as 
+\begin{equation}
+    F(hkl) = \sum_{m} f_m \exp\left( 2\pi i (u_m h + v_m k + w_m l) \right). 
+    \label{eq:structurefunction}
+\end{equation}
+where $f_m$ is the atomic form factor and $(u_m,v_m,w_m)$ are the fractional coordinates of atoms in the unit cell. for a bcc we know that we have the fractional coordinates (0,0,0) for each corner and (1/2,1/2,1/2). and for an fcc we have the (0,0,0) for each corner,  (0,1/2,1/2), (1/2,0,1/2) and (1/2,1/2,0). In the equation above h,k,l is the value of the miller index. Putting all of this together we know that we will obtain diffraction peaks only if $F(hkl)\neq0$ \cite{solidstatephysics2025}. 
+
+From this we can evaluate which planes we wil lsee from bcc and fcc. 
+
+
 
 \subsection{Powder X-ray Diffraction}
 
