@@ -36,8 +36,18 @@ Due to the structure of different types of lattices, the diffraction pattern may
 \end{equation}
 where $f_m$ is the atomic form factor and $(u_m,v_m,w_m)$ are the fractional coordinates of atoms in the unit cell. for a bcc we know that we have the fractional coordinates (0,0,0) for each corner and (1/2,1/2,1/2). and for an fcc we have the (0,0,0) for each corner,  (0,1/2,1/2), (1/2,0,1/2) and (1/2,1/2,0). In the equation above h,k,l is the value of the miller index. Putting all of this together we know that we will obtain diffraction peaks only if $F(hkl)\neq0$ \cite{solidstatephysics2025}. 
 
-From this we can evaluate which planes we wil lsee from bcc and fcc. 
-
+From this we can evaluate which planes we will see from bcc and fcc. From \autoref{eq:structurefunction} we can see that the points located at (0,0,0) will always yield a non-zero result. However, if we start looking at the bcc crystal we can obtain the following:
+\begin{align}
+    F(hkl) &= f_m \exp\left[ 2\pi i \left(0{h}+0{k}+0{l}\right) \right]+ f_m \exp\left[ 2\pi i \left(\frac{h}{2} + \frac{k}{2} + \frac{l}{2}\right) \right]=f_m\left[1+ \exp\left( 2\pi i \frac{h+k+l}{2} \right)\right] \\
+    &\text{if $F(hkl)\neq0$ } \implies -1\neq \exp\left( 2\pi i \frac{h+k+l}{2} \right) \implies \frac{h+k+l}{2} \neq n+\frac{1}{2} \text{, where n=1,2,3...} \\
+    &\implies h+k+l\neq 2n+1.
+\end{align}
+Above we used Euler's identity which says $\exp(i\pi (n+1/2)+1=0$. We have thus shown that for the bcc structure wont show any planes where $h+k+l$ are odd. For the fcc we get the following instead:
+\begin{align}
+    F(hkl) &= f_m + f_m \exp\left[ 2\pi i \left(\frac{h}{2} + \frac{k}{2}\right) \right]+f_m \exp\left[ 2\pi i \left(\frac{h}{2} + \frac{l}{2}\right) \right]+f_m \exp\left[ 2\pi i \left(\frac{k}{2} + \frac{l}{2}\right) \right]\\
+    &\text{if $F(hkl)\neq0$ } \implies -1\neq \exp\left[ 2\pi i \left(\frac{h}{2} + \frac{k}{2}\right) \right]+ \exp\left[ 2\pi i \left(\frac{h}{2} + \frac{l}{2}\right) \right]+ \exp\left[ 2\pi i \left(\frac{k}{2} + \frac{l}{2}\right) \right]
+\end{align}
+As shown before, we can see above if one of $h,k,l$ is even and the other are odd (or vice versa) then we get $-1\neq1-1-1$ which is not allowed. However if all $h,k,l$ are even or odd we obtain $-1\neq1+1+1$ which is true. Thus the (h,k,l) is always all odd or all even for the fcc. 
 
 
 \subsection{Powder X-ray Diffraction}
