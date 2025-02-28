@@ -1,20 +1,26 @@
 \section{Introduction}
 
-\section{Theory}
-\cite{hofmann2015}
 
+\section{Theory}
 \subsection{Crystal Lattice Structure}
+Crystal lattice structures are described by a Bravais lattice \cite{hofmann2015} which is an infinite array of points described by translational operations
+\begin{equation}
+    \mathbf{R} = n_1\mathbf{a}_1 + n_2\mathbf{a}_2 + n_3\mathbf{a}_3,
+\end{equation}
+where $\mathbf{a}_i$ are the lattice vectors. Performing a Fourier transform of the real space lattice gives the reciprocal lattice in k-space, also a Bravais lattice, which is described by the reciprocal lattice vectors $\mathbf{b}_j$ defined by $\mathbf{a}_i \cdot \mathbf{b_j} = 2\pi \delta_{ij}$ \cite{hofmann2015}. The reciprocal lattice is useful when performing diffraction experiments since the diffraction pattern is in k-space. 
 
 To calculate the distance between planes the formula 
 \begin{equation}
-\frac{1}{d^2}=\frac{h^2}{a^2}+\frac{k^2}{b^2}+\frac{l^2}{c^2}.
+\frac{1}{d^2}=\frac{h^2}{a^2}+\frac{k^2}{b^2}+\frac{l^2}{c^2}
 \label{eq:seperation}
 \end{equation}
+is used.
 If we use this formula for a simple cubic with $a=b=c=\SI{0.432}{\nano\m}$ for the plane(111) we get the separation to $d=\SI{0.249}{\nano\m}$. If we do the same for the plane (211) we obtain a separation of $d=\SI{0.176}{\nano\m}$ and for the plane (100) we get $d=\SI{0.432}{\nano\m}$. 
 
 
 
 \subsection{Diffraction}
+Diffraction is when light passes an obstacle, like an aperture, and the light deviates and spreads out \cite{hofmann2015}. In scattering experiments constructive and destructive interference can be observed which forms diffraction patterns that is analysed. Depending on the size of the obstacle, the wavelength of the light need to be chosen accordingly. For example, to resolve atomic structure the wavelength need to be on the same order as the lattice spacing, which is X-rays \cite{hofmann2015}.
 
 To evaluate diffraction patterns Bragg's law is mainly used, with is defined as
 \begin{equation}
@@ -51,6 +57,8 @@ As shown before, we can see above if one of $h,k,l$ is even and the other are od
 
 
 \subsection{Powder X-ray Diffraction}
+Powder X-ray diffraction (PXRD) is a method of diffraction to analyse crystal structure. In PXRD the sample is a fine powder of many small crystallites instead of a single large crystal \cite{hofmann2015}. This means that the crystal planes will be randomly oriented, and all possible orientations will be present. The diffraction pattern will look like a series of rings, instead of sharp points which arises from single crystal diffraction \cite{hofmann2015}. One of the advantages of powder diffraction is that it is quicker than other methods of analysing crystal structures.
+
 
 Transmission, fluorescence, 
 
