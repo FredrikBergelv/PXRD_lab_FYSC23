@@ -41,13 +41,25 @@ def bragg(n, lamb, theta):
     d = n * lamb / (2 * sin(theta))  # Use sin from uncertainties.umath
     return d
 
-n = 2  # Order of reflection
+n = 1  # Order of reflection
 
-plane_111 = 1/np.sqrt(3)
+plane_111 = np.sqrt(3), 
 
-plane_110 = 1/np.sqrt(2)
+plane_110 = np.sqrt(2)
 
-plane = plane_110
+plane_113 = np.sqrt(1**2+1**2+3**2)
+
+plane_133 = np.sqrt(1**2+3**2+3**2)
+
+plane_200 = np.sqrt(2**2)
+
+plane_220 = np.sqrt(2**2+2**2)
+
+
+plane_222 = np.sqrt(2**2+2**2+2**2)
+
+
+plane = plane_220
 
 #%%
 # Calculate d for Sample 1
@@ -60,7 +72,7 @@ for i, theta in enumerate(sample1):
 
 
 #%%
-# Calculate d for Sample 1
+# Calculate d for Sample 2
 print('Sample 2:')
 for i, theta in enumerate(sample2):
     d = bragg(n, lamb_xray, theta)  # Calculate d-spacing
