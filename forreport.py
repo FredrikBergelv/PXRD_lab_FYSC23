@@ -1,6 +1,20 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Mar  2 15:02:40 2025
+
+@author: fredrik
+"""
+
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
+from uncertainties import ufloat
+from uncertainties.umath import sin
+
+
+Table = False
 
 # Define the Gaussian function
 def gaussian(x, amplitude, mean, sigma):
@@ -39,10 +53,11 @@ for name in names:
     elif name == 'sample2':
         peaks = [(0.1747, 0.1802, 14.56), (0.2485, 0.2546, 4.45), (0.3059, 0.3129, 4.52)]
     
-    print(f'\\begin{{enumerate}}')  # Start the LaTeX enumerate environment
-    print(f'\\item For {name}:')
-    print(f'\\begin{{enumerate}}')  # Start a new enumerate for fitting results
-    
+    if Table:
+        print(f'\\begin{{enumerate}}')  # Start the LaTeX enumerate environment
+        print(f'\\item For {name}:')
+        print(f'\\begin{{enumerate}}')  # Start a new enumerate for fitting results
+        
     # Loop through each peak for fitting
     for i, (start, stop, amplitude) in enumerate(peaks):
         # Select the region of interest
@@ -88,7 +103,8 @@ for name in names:
             sf = 4  # significant figures
             
             # Print the fitting parameters in LaTeX format using \SI{}
-            print(f'\\item Peak {i + 1}: Amplitude = \\SI{{{fit_amplitude:.2f}}}{{units}} $\\pm$ \\SI{{{np.sqrt(pcov[0, 0]):.2f}}}{{units}}, '
+            if Table:
+                print(f'\\item Peak {i + 1}: Amplitude = \\SI{{{fit_amplitude:.2f}}}{{units}} $\\pm$ \\SI{{{np.sqrt(pcov[0, 0]):.2f}}}{{units}}, '
                   f'Mean = \\SI{{{fit_mean:.5f}}}{{radians}} $\\pm$ \\SI{{{np.sqrt(pcov[1, 1]):.5f}}}{{radians}}, '
                   f'Sigma = \\SI{{{fit_sigma:.5f}}}{{radians}} $\\pm$ \\SI{{{np.sqrt(pcov[2, 2]):.5f}}}{{radians}}, '
                   f'FWHM = \\SI{{{fwhm:.5f}}}{{radians}} $\\pm$ \\SI{{{fwhm_uncertainty:.5f}}}{{radians}}')
@@ -96,10 +112,82 @@ for name in names:
         except RuntimeError:
             print(f"  Peak {i + 1}: Could not fit peak in range {start:.4f} - {stop:.4f}")
     
-    print(f'\\end{{enumerate}}')  # End the LaTeX enumerate environment for fitting results
-    print(f'\\end{{enumerate}}')  # End the main LaTeX enumerate environment
+    if Table: 
+        print(f'\\end{{enumerate}}')  # End the LaTeX enumerate environment for fitting results
+        print(f'\\end{{enumerate}}')  # End the main LaTeX enumerate environment
     plt.legend()  # Show legend including Gaussian fits
     plt.savefig(f'PXRD_report/Figures/gaussian_{name}.pdf')
     plt.show()  # Display the plot
 
-plt.close('all')
+if Table:
+    plt.close('all')
+
+##############################################################################
+
+# Constants
+ev = 1.60217663e-19  # Electronvolt to Joules conversion
+h = 6.62607015e-34   # Planck's constant
+c = 299792458        # Speed of light in m/s
+
+# Energy and wavelength of X-ray
+E_xray = 17.45e3 * ev  # Energy in Joules
+lamb_xray = h * c / E_xray  # Wavelength in meters
+
+lattice_constants = {
+    "Si": 5.43102,
+    "CdTe": 6.482,
+    "KCl": 6.29,
+    "Ag": 4.079,
+    "Au": 4.065,
+    "W": 3.155,
+    "Fe": 2.856,
+    "Mo": 3.142,
+}
+
+# Sample 1 mean angles with uncertainties
+sample1_peak1 = ufloat(0.15362, 0.00010)
+sample1_peak2 = ufloat(0.17731, 0.00019)
+sample1_peak3 = ufloat(0.25180, 0.00018)
+sample1_peak4 = ufloat(0.29569, 0.00015)
+sample1_peak5 = ufloat(0.30900, 0.00015)
+
+# Create a list of all sample 1 mean angles
+sample1 = [sample1_peak1, sample1_peak2, sample1_peak3, sample1_peak4, sample1_peak5]
+
+# Sample 2 mean angles with uncertainties
+sample2_peak1 = ufloat(0.17746, 0.00012)
+sample2_peak2 = ufloat(0.25186, 0.00017)
+sample2_peak3 = ufloat(0.30942, 0.00014)
+
+sample2 = [sample2_peak1, sample2_peak2, sample2_peak3]
+
+def bragg(n, lamb, theta):
+    # Calculate d-spacing while ensuring theta is treated properly
+    d = n * lamb / (2 * sin(theta))  # Use sin from uncertainties.umath
+    return d
+
+n = 1  # Order of reflection
+
+plane_111 = np.sqrt(3)
+
+plane_110 = np.sqrt(2)
+
+
+# Calculate d for Sample 1
+for i, theta in enumerate(sample1):
+    d = bragg(n, lamb_xray, theta)  # Calculate d-spacingplane_111
+    a = d*plane_111
+    a = (a * 1e10)  # Convert from meters to angstroms
+    if np.isclose(a.nominal_value, lattice_constants['Au'], atol=0.05): 
+        print(f'Sample 1: peak {i+1} and plane (111) a = {a} Å, where a_Au = {lattice_constants['Au']}')  # Print result
+
+
+# Calculate d for Sample 1
+for i, theta in enumerate(sample1):
+    d = bragg(n, lamb_xray, theta)  # Calculate d-spacingplane_111
+    a = d*plane_110
+    a = (a * 1e10)  # Convert from meters to angstroms
+    if np.isclose(a.nominal_value, lattice_constants['Fe'], atol=0.05): 
+        print(f'Sample 2: peak {i+1} and plane (110) a = {a} Å, where a_Fe = {lattice_constants['Fe']}')  # Print result
+
+
