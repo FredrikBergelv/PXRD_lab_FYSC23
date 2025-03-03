@@ -1,19 +1,19 @@
 # Fdb version 4
-["bibtex .output/main"] 1741005598.92223 ".output/main.aux" ".output/main.bbl" ".output/main" 1741006042.68889 0
-  "./Textfiles/References.bib" 1740738294.75738 577 e4e13671fed83927b87a6a2f6ef7ce08 ""
-  ".output/Textfiles/appendix.aux" 1741006042.35733 1007 945a4ec8b8a923cdefd1127375778b53 "pdflatex"
-  ".output/main.aux" 1741006042.35833 3678 d79d091adb338fd01e3a517f6a8e6de4 "pdflatex"
+["bibtex .output/main"] 1741012596.58696 ".output/main.aux" ".output/main.bbl" ".output/main" 1741012762.64752 0
+  "./Textfiles/References.bib" 1741011691.83597 766 f49456fbc64f65401d40db1ca5ced20b ""
+  ".output/Textfiles/appendix.aux" 1741012762.28825 1007 a58191010b2e326ee3b27bc797cf3113 "pdflatex"
+  ".output/main.aux" 1741012762.28925 3799 c4125d892d74fde401a7b84fd1c85434 "pdflatex"
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
   (generated)
   ".output/main.bbl"
   ".output/main.blg"
   (rewritten before read)
-["pdflatex"] 1741006041.22035 "/home/fredrik/Documents/Physics Lund/Term 6/FYSC23/PRXD_lab_FYSC23/PXRD_report/main.tex" ".output/main.pdf" "main" 1741006042.68912 0
-  ".output/Textfiles/appendix.aux" 1741006042.35733 1007 945a4ec8b8a923cdefd1127375778b53 "pdflatex"
-  ".output/main.aux" 1741006042.35833 3678 d79d091adb338fd01e3a517f6a8e6de4 "pdflatex"
-  ".output/main.bbl" 1741005599.12768 453 770ff2675441a79e069ed374e1d0a0c4 "bibtex .output/main"
-  ".output/main.out" 1741006042.35933 1137 a4a06bda95e8d4296c53545baeac6509 "pdflatex"
-  ".output/main.toc" 1741006042.35933 727 2512aa8d9765f579fc334b764d9eb552 "pdflatex"
+["pdflatex"] 1741012760.91358 "/home/fredrik/Documents/Physics Lund/Term 6/FYSC23/PRXD_lab_FYSC23/PXRD_report/main.tex" ".output/main.pdf" "main" 1741012762.64788 0
+  ".output/Textfiles/appendix.aux" 1741012762.28825 1007 a58191010b2e326ee3b27bc797cf3113 "pdflatex"
+  ".output/main.aux" 1741012762.28925 3799 c4125d892d74fde401a7b84fd1c85434 "pdflatex"
+  ".output/main.bbl" 1741012596.69067 581 440825b901e4b00cc0e465d4860f09ef "bibtex .output/main"
+  ".output/main.out" 1741012762.29025 1137 a4a06bda95e8d4296c53545baeac6509 "pdflatex"
+  ".output/main.toc" 1741012762.29025 727 de3cb991bd1c37aa345195a89719f284 "pdflatex"
   "/etc/texmf/web2c/texmf.cnf" 1732548902.53758 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/fredrik/Documents/Physics Lund/Term 6/FYSC23/PRXD_lab_FYSC23/PXRD_report/main.tex" 1740575398.04375 550 7f1a8172d29555b71e7e36a0e7d27a98 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -251,10 +251,10 @@
   "Other/Information.tex" 1740661478.75801 523 44be48afe39c5c8b741d1e3be641b370 ""
   "Other/Premable.tex" 1741005031.49381 2058 0c78d617024cdc9a86dd74f3bd4498c0 ""
   "Other/Title.tex" 1740593328.55107 788 e5aa408519dec1a088622645a8e0b22e ""
-  "Textfiles/1.Introduction.tex" 1741006041.01032 7634 fd0f5b161de9ca59a7a5ab06e446842a ""
+  "Textfiles/1.Introduction.tex" 1741009937.27668 8379 f17385f0728843e82c05176acae84790 ""
   "Textfiles/2.Method.tex" 1740650610.39344 431 5fd7fe5eb4c99341b557d7bbfa0dc96c ""
-  "Textfiles/3.Result.tex" 1741005908.82226 7112 eac98856ede03a113b8e3264a944e8e3 ""
-  "Textfiles/4.Discussion.tex" 1740575398.04475 20 0e9daa63e73e84f4a684b671b2ca76db ""
+  "Textfiles/3.Result.tex" 1741012760.64425 4019 85f467dcb00b8e046e0ba2448f41c201 ""
+  "Textfiles/4.Discussion.tex" 1741012760.64425 1606 f84841f03c0c5537162acf76ce46b3ae ""
   "Textfiles/5.Conclusion.tex" 1740575398.04475 20 b50204e17c0a475d3d65191e029fdf1d ""
   "Textfiles/Appendix.tex" 1740575398.04475 0 d41d8cd98f00b204e9800998ecf8427e ""
   "main.tex" 1740575398.04375 550 7f1a8172d29555b71e7e36a0e7d27a98 ""

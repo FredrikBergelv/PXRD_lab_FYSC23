@@ -4,44 +4,44 @@ The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 A level-1 auxiliary file: Textfiles/appendix.aux
 Database file #1: Textfiles/References.bib
-You've used 2 entries,
+You've used 3 entries,
             1791 wiz_defined-function locations,
-            459 strings with 3852 characters,
-and the built_in function-call counts, 325 in all, are:
-= -- 28
-> -- 12
+            465 strings with 3933 characters,
+and the built_in function-call counts, 475 in all, are:
+= -- 41
+> -- 16
 < -- 0
-+ -- 5
-- -- 3
-* -- 12
-:= -- 59
-add.period$ -- 7
-call.type$ -- 2
++ -- 7
+- -- 4
+* -- 16
+:= -- 83
+add.period$ -- 10
+call.type$ -- 3
 change.case$ -- 1
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 17
-empty$ -- 35
-format.name$ -- 3
-if$ -- 72
+cite$ -- 3
+duplicate$ -- 27
+empty$ -- 54
+format.name$ -- 4
+if$ -- 108
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 14
-num.names$ -- 2
-pop$ -- 8
+int.to.str$ -- 3
+missing$ -- 4
+newline$ -- 19
+num.names$ -- 3
+pop$ -- 14
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 5
+skip$ -- 7
 stack$ -- 0
 substring$ -- 0
-swap$ -- 3
+swap$ -- 4
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 2
-width$ -- 3
-write$ -- 25
+while$ -- 3
+width$ -- 4
+write$ -- 36

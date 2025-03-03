@@ -34,6 +34,17 @@ For example if we have a (111) plane with an  incident angle \( \theta = 11.2^\c
 Another example for a orthorhombic unit cell with dimensions $a=\SI{5.74}{\angstrom}$, $b=\SI{7.96}{\angstrom}$ and $c=\SI{4.95}{\angstrom}$ one can calculate the incident angles for the (100), (010), and
 (111) planes if the  wavelength is \SI{0.083}{\nano\m}. For the (100) plane \autoref{eq:seperation} gives a planar separation of $d_{(100)}=\SI{0.574}{\nano\m}$, (010) gives $d_{(010)}=\SI{0.796}{\nano\m}$ and (111) gives $d_{(111)}=\SI{0.339}{\nano\m}$. Using \autoref{eq:Bragg} the following angles are found: $\theta_{(100)} = \SI{4.15}{\degree}$, $\theta_{(010)} = \SI{2.99}{\degree}$ and $\theta_{(111)} = \SI{7.03}{\degree}$.
 
+From \autoref{eq:Bragg} we can derive the following:
+\begin{align}
+    \frac{d}{d\lambda}\left(n\lambda\right)= \frac{d}{d\lambda}\left(2d\sin\theta\right) \implies n=2d\cos\theta \frac{d \theta}{d\lambda} = 2d\cos\theta \frac{\Delta \theta}{\Delta\lambda},
+\end{align}
+using Bragg's law once again we obtain 
+\begin{align}
+    \implies \frac{2d\sin\theta}{\lambda} = 2d\cos\theta \frac{\Delta \theta}{\Delta\lambda} \implies \Delta\theta = \frac{\Delta\lambda}{\lambda}\tan\theta.  
+    \label{eq:peak_spectrum}
+\end{align}
+This relation shows that the spectral contribution to the peak width $\theta$ is related to the spectral bandwidth $\Delta\lambda/\lambda$. However one must note that the broadening is also affected by other factors. 
+
 \subsection{Structure Factors}
 Due to the structure of different types of lattices, the diffraction pattern may change. This is due to structure function which are defined as 
 \begin{equation}
@@ -84,6 +95,7 @@ Scherrer's formula (Plz explain question 7 here)
     t=\frac{k\lambda}{\beta\cos\theta}
     \label{eq:Scherre}
 \end{equation}
+
 
 Structure factor: Se photos. For a simple cubic we see all peaks, for bcc and fcc we loose some peaks. 
 

@@ -9,6 +9,7 @@ Created on Sun Mar  2 14:50:45 2025
 import numpy as np
 from uncertainties import ufloat
 from uncertainties.umath import cos
+from uncertainties import nominal_value
 
 # Constants
 ev = 1.60217663e-19  # Electronvolt to Joules conversion
@@ -60,7 +61,8 @@ peak2 = [[sample2_peak1, sample2_FWHM1],
          [sample2_peak2, sample2_FWHM2], 
          [sample2_peak3, sample2_FWHM3]]
 
-#%%
+
+# %%
 
 t1_values = []
 
@@ -69,10 +71,16 @@ for angle, FWHM in peak1:
     t = Scherre(k, lamb_xray, FWHM, angle)
     t1_values.append(t)
     print(t)
-    
-print(f'mean particle size is {10**9*np.mean(t1_values)} nm')
 
-#%%%
+# Convert to floats for numpy operations
+t1_nominal = [nominal_value(t) for t in t1_values]
+
+mean_t1 = 10**9 * np.mean(t1_nominal)
+sigma_t1 = 10**9 * np.std(t1_nominal)
+
+print(f'Mean particle size is {mean_t1:.2f} nm, Standard deviation is {sigma_t1:.2f} nm')
+
+# %%%
 
 t2_values = []
 
@@ -81,5 +89,11 @@ for angle, FWHM in peak2:
     t = Scherre(k, lamb_xray, FWHM, angle)
     t2_values.append(t)
     print(t)
-    
-print(f'mean particle size is {10**9*np.mean(t2_values)} nm')
+
+# Convert to floats for numpy operations
+t2_nominal = [nominal_value(t) for t in t2_values]
+
+mean_t2 = 10**9 * np.mean(t2_nominal)
+sigma_t2 = 10**9 * np.std(t2_nominal)
+
+print(f'Mean particle size is {mean_t2:.2f} nm, Standard deviation is {sigma_t2:.2f} nm')
