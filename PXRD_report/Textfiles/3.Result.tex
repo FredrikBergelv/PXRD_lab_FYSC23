@@ -1,15 +1,16 @@
-
+\newpage
 \section{Result}
 
+In \autoref{fig:result_figure} one can see the given spectrum together with gaussian fits of all the peaks. The extracted mean peak angle, the standard deviation and the calculated full with maxima (using \autoref{eq:FWHM}) can bee seen in \autoref{tab:sample1} and \autoref{tab:sample2}. 
 
 \begin{figure}[H]
     \centering
-    \begin{subfigure}[b]{0.99\textwidth} 
+    \begin{subfigure}[b]{0.89\textwidth} 
         \includegraphics[width=\textwidth]{Figures/gaussian_sample1.pdf}
         \subcaption{This is the first subfigure.}
         \label{fig:subfigure1}
     \end{subfigure}
-    \begin{subfigure}[b]{0.99\textwidth} 
+    \begin{subfigure}[b]{0.89\textwidth} 
         \includegraphics[width=\textwidth]{Figures/gaussian_sample2.pdf}
         \subcaption{This is the second subfigure.}
         \label{fig:subfigure2}
@@ -17,6 +18,7 @@
     \caption{This figure shows two subfigures with separate captions.}
     \label{fig:result_figure}
 \end{figure}
+
 \begin{table}[H]
     \centering
     \caption{Fitting results for Sample 1}
@@ -31,6 +33,7 @@
     Peak 5 & \num{0.30900(0.00015)}{} & \num{0.00261(0.00021)}{} & \num{0.00616(0.00049)}{} \\
     \bottomrule
     \end{tabular}
+    \label{tab:sample1}
 \end{table}
 
 \begin{table}[H]
@@ -45,6 +48,7 @@
     Peak 3 & \num{0.30942(0.00014)}{} & \num{0.00326(0.00024)}{} & \num{0.00768(0.00056)}{} \\
     \bottomrule
     \end{tabular}
+    \label{tab:sample2}
 \end{table}
 
 Using peak 1 from the first sample and $n=1$, the plane (111) we obtain a spacing $a=\SI{4.0213(0.0026)}{\angstrom}$ which coincides with the material Au using \autoref{eq:Bragg} and \autoref{eq:seperation} with the given table \cite{solidstatephysics2025}. The first peak coincides with the plane (111) as seen in \autoref{eq:ordering} and all indices are odd which is must be true since Au is a fcc. This verifies this result. 

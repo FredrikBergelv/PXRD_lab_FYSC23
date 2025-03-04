@@ -82,20 +82,15 @@ Transmission, fluorescence,
 Xray diffraction, oscillating E field. When X ray hit the electrons the electrons start o vibrate in that frequency
 - Constructive and destructive interference 
 
-Bragg's law: $n\lambda=PD=2s=2d\sin\theta$
 
-Crystal lattice: fcc, bcc
-
-
-In powder diffraction we have all possible orientation sof the crystallites and some will be oriented in the right way for diffraction. Give rise to powder diffraction rings. 
-
-
-Scherrer's formula (Plz explain question 7 here)
+Scherrer's formula is used to estimate the size of crystallites based an the broadening of diffraction peaks as 
 \begin{equation}
-    t=\frac{k\lambda}{\beta\cos\theta}
+    t=\frac{k\lambda}{\beta\cos\theta},
     \label{eq:Scherre}
 \end{equation}
-
-
-Structure factor: Se photos. For a simple cubic we see all peaks, for bcc and fcc we loose some peaks. 
-
+where $t$ is the size of the crystallites, $\lambda$ is the wavelength of the x-ray, $k$ is the shape factor which varies with the full width half maximum $\beta$ but the value 0.94 is used here \cite{solidstatephysics2025}. However, one must note that the Scherrer's equation is accurate for crystallites smaller than \SI[scientific-notation=false]{100}{\nano\m}, as larger particles lead to much narrower peaks where factors, such as instrumental broadening, become more influential. To obtain the full width at half maximum the equation 
+\begin{equation}
+    \beta =2\sqrt{2 \ln(2)}\sigma,
+    \label{eq:FWHM}
+\end{equation}
+where $\sigma$ is the standard deviation. 
