@@ -32,6 +32,17 @@ For example if we have a (111) plane with an  incident angle \( \theta = 11.2^\c
 Another example for a orthorhombic unit cell with dimensions $a=\SI{5.74}{\angstrom}$, $b=\SI{7.96}{\angstrom}$ and $c=\SI{4.95}{\angstrom}$ one can calculate the incident angles for the (100), (010), and
 (111) planes if the  wavelength is \SI{0.083}{\nano\m}. For the (100) plane \autoref{eq:seperation} gives a planar separation of $d_{(100)}=\SI{0.574}{\nano\m}$, (010) gives $d_{(010)}=\SI{0.796}{\nano\m}$ and (111) gives $d_{(111)}=\SI{0.339}{\nano\m}$. Using \autoref{eq:Bragg} the following angles are found: $\theta_{(100)} = \SI{4.15}{\degree}$, $\theta_{(010)} = \SI{2.99}{\degree}$ and $\theta_{(111)} = \SI{7.03}{\degree}$.
 
+From \autoref{eq:Bragg} we can derive the following:
+\begin{align}
+    \frac{d}{d\lambda}\left(n\lambda\right)= \frac{d}{d\lambda}\left(2d\sin\theta\right) \implies n=2d\cos\theta \frac{d \theta}{d\lambda} = 2d\cos\theta \frac{\Delta \theta}{\Delta\lambda},
+\end{align}
+using Bragg's law once again we obtain 
+\begin{align}
+    \implies \frac{2d\sin\theta}{\lambda} = 2d\cos\theta \frac{\Delta \theta}{\Delta\lambda} \implies \Delta\theta = \frac{\Delta\lambda}{\lambda}\tan\theta.  
+    \label{eq:peak_spectrum}
+\end{align}
+This relation shows that the spectral contribution to the peak width $\theta$ is related to the spectral bandwidth $\Delta\lambda/\lambda$. However one must note that the broadening is also affected by other factors. 
+
 \subsection{Structure Factors}
 Due to the structure of different types of lattices, the diffraction pattern may change. This is due to structure function which are defined as 
 \begin{equation}
@@ -58,7 +69,7 @@ The order of the peaks we will see will be ordered as
     \sqrt{h^2+k^2+l^2},
     \label{eq:ordering}
 \end{equation}  
-where h, k and l are the miller indices of that specific plane. Thus, for a bcc crystal the peaks will be in the order (110), (200), (211), (220) and so on. For the fcc the peaks will be (111),(200),(220),(311),(222) and so on.  
+where h, k and l are the miller indices of that specific plane. Thus, for a bcc crystal the peaks will be in the order (110), (200), (211), (220) and so on. For the fcc the peaks will be (111), (200), (220), (311), (222) and so on.  
 
 \subsection{Powder X-ray Diffraction}
 Powder X-ray diffraction (PXRD) is a method of diffraction to analyse crystal structure. In PXRD the sample is a fine powder of many small crystallites instead of a single large crystal \cite{hofmann2015}. This means that the crystal planes will be randomly oriented, and all possible orientations will be present. The diffraction pattern will look like a series of rings, instead of sharp points which arises from single crystal diffraction \cite{hofmann2015}. One of the advantages of powder diffraction is that it is quicker than other methods of analysing crystal structures.
@@ -69,17 +80,15 @@ Transmission, fluorescence,
 Xray diffraction, oscillating E field. When X ray hit the electrons the electrons start o vibrate in that frequency
 - Constructive and destructive interference 
 
-Bragg's law: $n\lambda=PD=2s=2d\sin\theta$
 
-Crystal lattice: fcc, bcc
-
-
-In powder diffraction we have all possible orientation sof the crystallites and some will be oriented in the right way for diffraction. Give rise to powder diffraction rings. 
-
-Scherrer's formula
+Scherrer's formula is used to estimate the size of crystallites based an the broadening of diffraction peaks as 
 \begin{equation}
-    t=\frac{k\lambda}{\beta\cos\theta}
+    t=\frac{k\lambda}{\beta\cos\theta},
+    \label{eq:Scherre}
 \end{equation}
-
-Structure factor: Se photos. For a simple cubic we see all peaks, for bcc and fcc we loose some peaks. 
-
+where $t$ is the size of the crystallites, $\lambda$ is the wavelength of the x-ray, $k$ is the shape factor which varies with the full width half maximum $\beta$ but the value 0.94 is used here \cite{solidstatephysics2025}. However, one must note that the Scherrer's equation is accurate for crystallites smaller than \SI[scientific-notation=false]{100}{\nano\m}, as larger particles lead to much narrower peaks where factors, such as instrumental broadening, become more influential. To obtain the full width at half maximum the equation 
+\begin{equation}
+    \beta =2\sqrt{2 \ln(2)}\sigma,
+    \label{eq:FWHM}
+\end{equation}
+where $\sigma$ is the standard deviation. 
