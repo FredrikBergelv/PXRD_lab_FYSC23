@@ -8,12 +8,15 @@
 
 \input{Other/Title}
 
+\pagestyle{empty}
+\include{Textfiles/0.Abstract}
+
+
 \ifthenelse{\equal{\IncludeTab}{true}}{\pagestyle{empty}
 \tableofcontents
 \newpage
 \setcounter{page}{1}
 \pagestyle{fancy}}{}
-
 \input{Textfiles/1.Introduction.tex}
 \input{Textfiles/2.Method.tex}
 \input{Textfiles/3.Result.tex}

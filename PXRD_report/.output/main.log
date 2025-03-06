@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.25)  4 MAR 2025 14:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.25)  11 MAR 2025 13:16
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/fredrik/Documents/Physics Lund/Term 6/FYSC23/PRXD_lab_FYSC23/PXRD_report/main.tex"
-(/home/fredrik/Documents/Physics Lund/Term 6/FYSC23/PRXD_lab_FYSC23/PXRD_report/main.tex
+**"/home/fredrik/Documents/Physics Lund/Term 6/PRXD_lab_FYSC23/PXRD_report/main.tex"
+(/home/fredrik/Documents/Physics Lund/Term 6/PRXD_lab_FYSC23/PXRD_report/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -746,7 +746,7 @@ Package siunitx Info: Option "scientific-notation = true" has been deprecated
 
 )
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 7.
- (.output/main.aux (.output/Textfiles/appendix.aux))
+ (.output/main.aux (.output/Textfiles/0.Abstract.aux) (.output/Textfiles/appendix.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -852,7 +852,17 @@ Package pdftex.def Info: Figures/Lund logo.png  used on input line 38.
 (pdftex.def)             Requested size: 182.09486pt x 190.28476pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./Figures/Lund logo.png>]) (.output/main.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./Figures/Lund logo.png>])
+\openout2 = `Textfiles/0.Abstract.aux'.
+
+ (./Textfiles/0.Abstract.tex)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 \include{Textfiles/0.Abstract}
+                                    [1
+
+] (.output/main.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -864,30 +874,39 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
+ [2
 
+
+] (./Textfiles/1.Introduction.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 \pagestyle{fancy}}{}
-                          [1] (./Textfiles/1.Introduction.tex
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+l.31 
+      [1{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 A
-      nother example for a orthorhombic unit cell with dimensions $a=\SI{5.7... [1{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2]
+l.66 
+      [2]
 
 Package siunitx Info: Option "scientific-notation = false" has been deprecated
 (siunitx)             in this release.
 (siunitx)             
 (siunitx)             Use "exponent-mode = input" as a replacement.
 
-) (./Textfiles/2.Method.tex [3]) (./Textfiles/3.Result.tex [4]
-<Figures/gaussian_sample1.pdf, id=142, 650.43pt x 433.62pt>
+) (./Textfiles/2.Method.tex
+<Figures/setup_letters.jpg, id=133, 1284.8pt x 963.6pt>
+File: Figures/setup_letters.jpg Graphic file (type jpg)
+<use Figures/setup_letters.jpg>
+Package pdftex.def Info: Figures/setup_letters.jpg  used on input line 5.
+(pdftex.def)             Requested size: 318.66948pt x 239.00267pt.
+ [3]) (./Textfiles/3.Result.tex [4 <./Figures/setup_letters.jpg>]
+<Figures/gaussian_sample1.pdf, id=151, 650.43pt x 433.62pt>
 File: Figures/gaussian_sample1.pdf Graphic file (type pdf)
 <use Figures/gaussian_sample1.pdf>
 Package pdftex.def Info: Figures/gaussian_sample1.pdf  used on input line 9.
 (pdftex.def)             Requested size: 405.16698pt x 270.1186pt.
-<Figures/gaussian_sample2.pdf, id=143, 650.43pt x 433.62pt>
+<Figures/gaussian_sample2.pdf, id=152, 650.43pt x 433.62pt>
 File: Figures/gaussian_sample2.pdf Graphic file (type pdf)
 <use Figures/gaussian_sample2.pdf>
 Package pdftex.def Info: Figures/gaussian_sample2.pdf  used on input line 14.
@@ -897,7 +916,7 @@ Package pdftex.def Info: Figures/gaussian_sample2.pdf  used on input line 14.
 
  (./Textfiles/Appendix.tex) 
 enddocument/afterlastpage: lastpage setting LastPage.
-(.output/main.aux (.output/Textfiles/appendix.aux))
+(.output/main.aux (.output/Textfiles/0.Abstract.aux) (.output/Textfiles/appendix.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -906,18 +925,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: A4A06BDA95E8D4296C53545BAEAC6509;1137.
  ) 
 Here is how much of TeX's memory you used:
- 31948 strings out of 474222
- 628183 string characters out of 5748732
+ 31987 strings out of 474222
+ 629403 string characters out of 5748732
  1947975 words of memory out of 5000000
- 53616 multiletter control sequences out of 15000+600000
- 574622 words of font info for 68 fonts, out of 8000000 for 9000
+ 53646 multiletter control sequences out of 15000+600000
+ 575398 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,15n,96p,2448b,948s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on .output/main.pdf (10 pages, 588979 bytes).
+ 99i,15n,96p,2441b,948s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on .output/main.pdf (11 pages, 836388 bytes).
 PDF statistics:
- 388 PDF objects out of 1000 (max. 8388607)
- 252 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 402 PDF objects out of 1000 (max. 8388607)
+ 262 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
